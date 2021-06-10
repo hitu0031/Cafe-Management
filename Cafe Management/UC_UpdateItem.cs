@@ -57,7 +57,7 @@ namespace Cafe_Management
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            query = "update items set name='" + txtItemName.Text + "',category='" + txtCategory.Text + "',price=" + txtPrice + " where iid = " + id + "";
+            query = "update items set name='" + txtItemName.Text + "',category='" + txtCategory.Text + "',price=" + txtPrice.Text + " where iid = " + id + "";
             fn.setData(query);
             loadData();
 
